@@ -29,11 +29,8 @@ $(function(){
       shake();
       sum=0;
       $("#sum").text(sum);
-    // }if (targetNumber !== sum) {
-    //   console.log("Try Again!")
-    //   tryAgain()
-    //
-    }else {
+    }else() {
+      console.log("Try Again");
     }
   }
 
