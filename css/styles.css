@@ -1,0 +1,101 @@
+.money-container {
+  border: #33ab33a8 5px solid;
+  width: 53%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #33ab33a8;
+  margin-top: -100px;
+  }
+
+.money-container img {
+  height: 90px
+  }
+
+header {
+  border: #33ab33a8 5px solid;
+  margin-bottom: 40px;
+  background-color: #33ab33a8;
+  }
+
+.bank-container {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  }
+
+.bank-container img {
+  height: 200px;
+  }
+
+.dynamic-box{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 40px;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  }
+
+button {
+  width: 100px;
+  }
+
+.button-container {
+  display: flex;
+  justify-content: flex-end;
+  }
+
+.counter-container{
+  width: 100px;
+  border: #33ab33a8 5px solid;
+  margin:20px;
+  background-color: #33ab33a8;
+  font-size: 28px;
+  height: min-content;
+  }
+
+.questions-container{
+  width: 120px;
+  border: #33ab33a8 5px solid;
+  margin:20px;
+  background-color: #33ab33a8;
+  font-size: 20px;
+  }
+.header-container{
+  display:flex;
+  justify-content: center;
+}
+
+body{
+  background-image: url(https://st3.depositphotos.com/5466018/18952/v/1600/depositphotos_189526202-stock-illustration-seamless-pattern-background-money-rain.jpg);
+}
+
+h2{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 50px;
+  text-decoration: underline;
+  text-decoration-style: double;
+}
+
+p{
+  font-family: 'Gloria Hallelujah', cursive;
+  font-weight: bold;
+}
+
+.money-container p{
+  font-size: 25px;
+}
+
+.questions-container span {
+  text-decoration: underline;
+  font-size: 1.2em;
+  color: #bf1717;
+}
+
+/* .counter-container{
+  display: flex;
+} */
