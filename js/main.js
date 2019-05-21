@@ -4,10 +4,26 @@ $(function(){
 
   let sum = 0
   let questions = [20.76, 45.29, 10.76, 4.50, 7.90]
-  let randomIndex = generateRandomNumber()
-  let targetNumber = questions[randomIndex]
+  // let randomIndex = generateRandomNumber()
+  let questionIndex = generateRandomNumber()
+  let targetNumber
 
-  $("#question").text(targetNumber.toFixed(2))
+
+  // call prepareQuestion
+  // display first question when application loads up
+  prepareQuestion(questionIndex)
+
+  // function that picks a targetNumber and displays
+  // on the screen
+  function prepareQuestion(index) {
+    // set new targetNumber
+     targetNumber = questions[index]
+     console.log(targetNumber);
+    // display number
+    $("#question").text(targetNumber.toFixed(2))
+
+  }
+
 
 
   function getValue(){
@@ -18,6 +34,7 @@ $(function(){
     console.log(sum);
 
     $("#sum").text(sum.toFixed(2));
+    removeShake()
   }
 
   $("#compare").click(compareAnswer);
@@ -27,16 +44,38 @@ $(function(){
     if(targetNumber === sum){
       console.log("Shmoney"); //logic to play soundbit will go here//
       shake();
+      questionIndex = generateRandomNumber();
+      // reset sum to zero
       sum=0;
       $("#sum").text(sum);
-    }else() {
+
+      // increment questionIndex by 1
+      // questionIndex = questionIndex + 1
+      prepareQuestion(questionIndex)
+
+      // reassiging targetNumber to next number in questions array
+      //targetNumber = questions[questionIndex]
+
+      // display new target number to the page
+      //$("#question").text(targetNumber.toFixed(2))
+      // randomQuestion()
+
+
+    }else {
       console.log("Try Again");
+      tryAgain();
     }
   }
 
   function roundAmount (amount) {
     return (Math.round(amount * 100) / 100)
   }
+
+  // function randomQuestion(){
+  //   for ( let randomIndex = 0; randomIndex < questions.length; randomIndex++) {
+  //   console.log(questions[randomIndex]);
+  //   }
+  // }
 
   $("#reset").click(reset);
 
@@ -51,6 +90,10 @@ $(function(){
     $('.bank-container img').addClass('animated shake delay-500ms')
   }
 
+  function removeShake(){
+    $('.bank-container img').removeClass('animated shake delay-500ms')
+  }
+
   function generateRandomNumber() {
     return Math.floor(Math.random() * questions.length);
   }
@@ -58,5 +101,9 @@ $(function(){
   function tryAgain() {
   alert("Oops! Wrong answer. Please try again");
   }
+
+  // function shuffle(questions) {
+  //  return questions.sort(() => Math.random() - 0.5);
+  // }
 
  });
