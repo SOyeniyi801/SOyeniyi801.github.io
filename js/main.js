@@ -88,7 +88,7 @@ $(function(){
   function shake(){
     console.log("shake pig");
     $('.bank-container img').addClass('animated shake delay-500ms')
-    $('audio#kaching')[0].play()
+    $('audio#money')[0].play()
   }
 
   function removeShake(){
