@@ -3,7 +3,7 @@ $(function(){
   $(".money-container img").click(getValue);
 
   let sum = 0
-  let questions = [20.76, 45.29, 10.76, 4.50, 7.90]
+  let questions = [20.76, 45.29, 10.76, 4.50, 7.90, 15.30, 23.67, 150.89, 64.43, 5.45, 0.38, 28.19]
   let questionIndex = generateRandomNumber()
   let targetNumber
 
@@ -48,7 +48,7 @@ $(function(){
       // increment questionIndex by 1
       // questionIndex = questionIndex + 1
       prepareQuestion(questionIndex)
-      
+
     }else {
       console.log("Try Again");
       tryAgain();
