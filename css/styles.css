@@ -1,10 +1,10 @@
 .money-container {
-  border: #33ab33a8 5px solid;
+  border: #d3ffba 5px solid;
   width: 53%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: #33ab33a8;
+  background-color: #009e43;
   margin-top: -100px;
   }
 
@@ -13,9 +13,9 @@
   }
 
 header {
-  border: #33ab33a8 5px solid;
+  border: #d3ffba 5px solid;
   margin-bottom: 40px;
-  background-color: #33ab33a8;
+  background-color: #009e43;
   }
 
 .bank-container {
@@ -51,23 +51,26 @@ button {
 
 .counter-container{
   width: 100px;
-  border: #33ab33a8 5px solid;
-  margin:20px;
-  background-color: #33ab33a8;
-  font-size: 28px;
-  height: min-content;
+    border: #d3ffba 5px solid;
+    margin: 20px;
+    background-color: #009e43;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
   }
 
 .questions-container{
   width: 120px;
-  border: #33ab33a8 5px solid;
+  border: #d3ffba 5px solid;
   margin:20px;
-  background-color: #33ab33a8;
+  background-color: #009e43;
   font-size: 20px;
   }
+
 .header-container{
   display:flex;
   justify-content: center;
+  margin-bottom: -30px;
 }
 
 body{
@@ -96,6 +99,6 @@ p{
   color: #bf1717;
 }
 
-/* .counter-container{
-  display: flex;
-} */
+.body-container{
+  margin-top: -48px;
+}
